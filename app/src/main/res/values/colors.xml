@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="outRing">#0749F3</color>
+    <color name="startRing">#F033F807</color>
+    <color name="centerRing">#E9E6D00A</color>
+    <color name="endRing">#EBF30F07</color>
+    <color name="startStopButton">#FF9800</color>
+    <color name="resetButton">#FF9800</color>
+</resources>
+<!--#03DAC5-->

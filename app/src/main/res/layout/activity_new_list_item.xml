@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/newCreateText"
+        android:text="新規作成"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_below="@+id/newCreateText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/name" />
+
+    <EditText
+        android:id="@+id/edtWorkoutTime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtName"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/workout_time"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:maxLength="4"/>
+
+
+    <EditText
+        android:id="@+id/edtRestTime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtWorkoutTime"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/rest_time"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtRestTime"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/number"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/edtSetCount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNumber"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/set_count"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/edtSetDuring"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSetCount"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/set_during"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:maxLength="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSetDuring"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:minWidth="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAdd"
+            />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:minWidth="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCancel"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
